@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <div id="root" class="text-center">
+    <div id="root" v-if="mailList.length === 10" class="text-center">
         <h1 class="fw-bold">Vue Email List</h1>
-        <ol v-if="(mailList.length == 10)">
+        <ol v-if="(mailList.length === 10)">
             <li v-for="element in this.mailList" class="mb-1 fw-bold">
                 {{ element }}
             </li>
